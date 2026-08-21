@@ -1,0 +1,17 @@
+num1=int(input("enter first number:"))
+num2=int(input("enter second number:"))
+operator=input("enter operaator(+,-,*,/):")
+
+if operator=="+":
+    print("answer is;",num1+num2)
+
+elif operator=="-":
+    print("answer is;",num1-num2)
+elif operator=="*":
+    print("answer is;",num1*num2)
+elif operator=="/":
+    print("answer is;",num1/num2)
+
+else:
+    print("invalid operator")
+        
