@@ -1,0 +1,7 @@
+name=input("enter your name:")
+password=int(input("enter your password:"))
+if name=="aman" and password==1234:
+    print("login successful")
+else:
+    print("login failed")
+    
