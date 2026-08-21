@@ -1,0 +1,36 @@
+correct_pin=1234 # creat pin and balance #
+balance=1000
+
+pin=int(input("enter your pin:"))
+if pin==correct_pin:
+    print("login successful") # login check #
+# ATM menu #
+    print("1.check balance")
+    print("2.withdraw")
+    print("3.deposit")
+
+    choice=int(input("enter your choice"))
+    if choice==1:
+        print("your balance is:", balance) 
+
+    elif choice==2:
+       amount=int(input("enter amount to withdraw:"))
+       if amount<=balance:
+           balance=balance-amount
+           print("withdrawal successful")
+           print("remaining balance:",balance)
+       else:
+           print("insufficient balance")
+    elif choice==3:
+        amount=int(input("enter amount to deposit"))
+        balance=balance+amount
+        print("deposit successful")
+        print("updated balance:",balance)
+    else:
+        print("invalid choice")
+else:
+    print("wrong pin")
+
+
+
+
